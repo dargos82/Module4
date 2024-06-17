@@ -4,7 +4,7 @@ all: PrintInt.s
 
 run: PrintInt.s
 	gcc PrintInt.s -g -c -o PrintInt.o
-	gcc PrintInt.o -g -o PrintInt
+	gcc PrintInt.o -g -o PrintInt -z noexecstack
 	./PrintInt
 
 clean:
