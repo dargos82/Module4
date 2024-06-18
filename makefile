@@ -1,11 +1,11 @@
-all: PrintInt.s
-	gcc PrintInt.s -g -c -o PrintInt.o
-	gcc PrintInt.o -g -o PrintInt -z noexecstack
+all: GetAge.s
+	gcc GetAge.s -g -c -o GetAge.o
+	gcc GetAge.o -g -o GetAge -z noexecstack
 
-run: PrintInt.s
-	gcc PrintInt.s -g -c -o PrintInt.o
-	gcc PrintInt.o -g -o PrintInt -z noexecstack
-	./PrintInt
+run: GetAge.s
+	gcc GetAge.s -g -c -o GetAge.o
+	gcc GetAge.o -g -o GetAge -z noexecstack
+	./GetAge
 
 clean:
 	rm *.o
