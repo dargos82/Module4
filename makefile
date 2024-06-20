@@ -1,11 +1,10 @@
-all: GetAge.s
+GetAge: GetAge.s
 	gcc GetAge.s -g -c -o GetAge.o
 	gcc GetAge.o -g -o GetAge -z noexecstack
 
-run: GetAge.s
-	gcc GetAge.s -g -c -o GetAge.o
-	gcc GetAge.o -g -o GetAge -z noexecstack
-	./GetAge
+ReadFloat: ReadFloat.s
+	gcc ReadFloat.s -g -c -o ReadFloat.o
+	gcc ReadFloat.o -g -o ReadFloat -z noexecstack
 
 clean:
-	rm *.o
+	rm *.o ReadFloat ReadFloat2
