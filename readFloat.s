@@ -1,8 +1,8 @@
-#Program Name: ReadFloat
+#Program Name: readFloat.s
 #Author: David Blossom
-#Date: 19 Jun 2024
+#Date: 22 Jun 2024
 #Purpose: Prompt a user for input as a float, print output as a double
-#Input: num1
+#Input: num1 - user input value
 #Output: output1
 
 .text
@@ -41,7 +41,11 @@ main:
     MOV pc, lr
 
 .data
+    #prompt user for input
     prompt1: .asciz "Enter a float: \n"
+    #format for variable for user input
     input1:  .asciz "%f"
+    #variable for value of user input
     num1:    .word  0
+    #output string
     output1: .asciz "You entered: %f\n"
